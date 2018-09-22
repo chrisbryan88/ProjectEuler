@@ -1,0 +1,29 @@
+'''
+projecteuler.net/problem=1
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+******************************
+
+This solution is an iterative solution with O(n) complexity 
+'''
+import time
+
+start = time.time()
+
+sum = 0 #initialize variable sum
+
+for i in range(1000): #evaluate mod3 and mod5 of all numbers in range 1000
+    if i%3 == 0 or i%5 == 0:
+        sum += i #if mod3 or mod5 pass then sum the values
+    else:
+        pass #if mod3 or mod5 does not pass then do nothing
+
+end = time.time()
+
+print(sum) #print total sum after the loop has ended
+print(end-start) #print time elapsed to run loop snippet
+
+#FINAL SOLUTION: 233168 TIME: 0.0002117156982421875s
