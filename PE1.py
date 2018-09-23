@@ -32,6 +32,10 @@ print(end-start) #print time elapsed to run loop snippet
 '''
 This solution iterates over the multiples of 5 and multiples of 3
 and sums the totals. This solution has O(2n) complexity.
+//Further study is needed on Big O notation as I think that each
+loop is taking a subset of n such that the complexity is actually
+O(n/l + n/k) or something along these lines. A better understanding 
+of the notation is needed
 '''
 
 start = time.time()
