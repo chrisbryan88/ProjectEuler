@@ -9,6 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 This solution is an iterative solution with O(n) complexity 
 '''
+
 import time
 
 start = time.time()
@@ -27,3 +28,32 @@ print(sum) #print total sum after the loop has ended
 print(end-start) #print time elapsed to run loop snippet
 
 #FINAL SOLUTION: 233168 TIME: 0.0002117156982421875s
+
+'''
+This solution iterates over the multiples of 5 and multiples of 3
+and sums the totals. This solution has O(2n) complexity.
+'''
+
+start = time.time()
+
+sum3 = 0 #initialize sum3 variable
+sum5 = 0 #initialize sum5 variable
+
+for i in range(3,1000,3): #looping through multiples of 3
+    if i%5 == 0:
+        pass
+    else:
+        sum3 += i
+
+for j in range(5,1000,5): #looping through multiples of 5
+    sum5 += j
+
+end = time.time()
+
+print(sum3+sum5) #print total sum after both loops have ended
+print(end-start) #print time elapsed to run snippet
+
+#FINAL SOLUTION: 233168 TIME: 0.0001220703125s
+#Slightly faster, loops through only necessary multiples of 5 and
+#only has one modulo operation (instead of 2 modulo operations) to
+#filter out double counting (where multiples of 3 collide with multiples of 5)
