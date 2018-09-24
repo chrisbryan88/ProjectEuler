@@ -13,7 +13,7 @@ that any triple digit number can be represented by a sum with appropriate weight
 (100*a + 10*b + c) and two triple digit multiplied is the product of these two numbers,
 (100*a + 10*b + c)*(100*d + 10*e + f). With some assumptions and knowing that the ending and starting 
 digit must be the same, the solutions are reduced to a small number of test cases which can be hand checked.
-Also, Project Euler docs show that a palindrome is of the form P = (100000x  10000y  1000z  100z  10y  x).
+Also, Project Euler docs show that a palindrome is of the form P = (100000x + 10000y + 1000z + 100z + 10y + x).
 Bringing like terms together shows that the answer must be divisible by 11 which means at least one factor must
 be divisible by 11. This can be used to filter the test numbers used and reduce uneccessary checks.
 '''
