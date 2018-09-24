@@ -35,3 +35,5 @@ end = time.time()
 
 print(largest)
 print(end-start)
+
+#FINAL SOLUTION: 906609 TIME: 0.641685962677002s
